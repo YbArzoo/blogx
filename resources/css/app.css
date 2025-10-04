@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    /* Label text color */
+    label, .form-label {
+      @apply text-zinc-700 dark:text-zinc-300;
+    }
+  }
+  
+  @layer components {
+    /* Generic card */
+    .card {
+      @apply rounded-lg border border-zinc-200 bg-white shadow-sm
+             dark:border-zinc-800 dark:bg-zinc-900;
+    }
+  
+    /* Inputs / selects / textareas */
+    .input {
+      @apply w-full rounded-lg border border-zinc-300 bg-white px-3 py-2
+             text-zinc-900 placeholder-zinc-500 focus:border-indigo-500 focus:ring-indigo-500
+             dark:border-zinc-700 dark:bg-zinc-900 dark:text-zinc-100 dark:placeholder-zinc-500;
+    }
+  
+    /* Buttons */
+    .btn {
+      @apply inline-flex items-center rounded-lg px-4 py-2 text-sm font-medium;
+    }
+    .btn-primary { @apply btn bg-indigo-600 text-white hover:bg-indigo-500; }
+    .btn-muted   { @apply btn bg-zinc-200 hover:bg-zinc-300 dark:bg-zinc-800 dark:hover:bg-zinc-700 dark:text-zinc-100; }
+  }
+  
